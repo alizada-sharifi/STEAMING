@@ -21,7 +21,7 @@ function Navbar() {
   };
   return (
     <>
-      <nav className="flex items-center flex-grow justify-between px-[50px]  fixed w-full shadow-lg top-0 z-[1000] bg-[#121a23] ">
+      <nav className="flex items-center flex-grow justify-between px-[50px]   sticky w-full shadow-lg top-0 z-[1000] bg-[#121a23] ">
         <div className="logo">
           <Link to="/">
             <img src={logo} alt="logo" className="max-w-[177px]" />

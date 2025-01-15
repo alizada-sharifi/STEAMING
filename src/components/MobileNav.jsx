@@ -29,9 +29,10 @@ function MobileNav() {
   return (
     <>
       <div className={isMenuOpen ? bgMenu : ""} onClick={handleMenu}></div>
-      <div className="border border-green p-1" onClick={handleMenu}>
+      <div className="border border-green p-1 my-4" onClick={handleMenu}>
         <FaBars size="25px" color="#45f882" />
       </div>
+      {/* offcanvas section */}
       <div
         className={`${
           isMenuOpen

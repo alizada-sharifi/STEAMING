@@ -75,7 +75,7 @@ function AboutUs() {
             top rated steamers
           </h1>
           <span className="h-1 w-16 rounded-md bg-green mb-10 "></span>
-          <div className="btn text-white font-bold text-[20px] flex mb-10 gap-x-7">
+          <div className="btn text-white flex-wrap justify-center gap-y-4 font-bold text-[20px] flex mb-10 gap-x-7">
             <Link className="border-2 border-green px-10 py-2 hover:bg-green hover:text-black">
               BUY HERE
             </Link>
@@ -94,7 +94,7 @@ function AboutUs() {
             ))}
           </div>
           {/* avatar section */}
-          <div className="py-12 flex gap-y-10 flex-col w-10/12 xl:flex-row items-center xl:w-full">
+          <div className="py-12  flex gap-y-10 flex-col w-10/12 xl:flex-row items-center xl:w-full">
             <div className="w-full xl:w-5/12">
               <img
                 src={selectedAvatar.HeroPhoto}
@@ -141,17 +141,35 @@ function AboutUs() {
                   </div>
                 </div>
               </div>
-              <div className="footer border-b border-green border-opacity-40 flex gap-4 mt-9 xl:mt-28">
-                <div className=" block bg-[#1f2935] bg-[linear-gradient(0deg,#10181f_0%,_transparent_0%,#141a20_100%) text-[16px] font-bold text-[#adb0bc] text-center tracking-[1px] w-1/3 !py-[25px] hover:text-[#45f882] cursor-pointer">
-                  DRAGON BALL
-                </div>
-                <div className=" block bg-[#1f2935] bg-[linear-gradient(0deg,#10181f_0%,_transparent_0%,#141a20_100%)]  text-[16px] font-bold text-[#adb0bc] text-center tracking-[1px] w-1/3 !py-[25px] hover:text-[#45f882] cursor-pointer">
-                  NFT MARKET
-                </div>
-                <div className=" block bg-[#1f2935] bg-[linear-gradient(0deg,#10181f_0%,_transparent_0%,#141a20_100%)]  text-[16px] font-bold text-[#adb0bc] text-center tracking-[1px] w-1/3 !py-[25px] hover:text-[#45f882] cursor-pointer">
-                  SUPPORT
-                </div>
-              </div>
+              <ul className="list-wrap my-16 p-0 flex items-center gap-[7px_7px] sm:flex-wrap xsm:flex-wrap">
+                <li className="flex-auto ">
+                  <Link
+                    className=" block bg-[#1f2935] bg-[linear-gradient(0deg,#10181f_0%,_transparent_0%,#141a20_100%)] uppercase text-[16px] font-bold text-[#adb0bc] text-center tracking-[1px] px-[30px] py-[25px] hover:text-[#45f882] font-Barlow
+                             sm:p-[13px_30px] xsm:p-[13px_30px]
+                            "
+                  >
+                    DRAGON BALL
+                  </Link>
+                </li>
+                <li className="flex-auto ">
+                  <Link
+                    className=" block bg-[#1f2935] bg-[linear-gradient(0deg,#10181f_0%,_transparent_0%,#141a20_100%)] uppercase text-[16px] font-bold text-[#adb0bc] text-center tracking-[1px] px-[30px] py-[25px] hover:text-[#45f882] font-Barlow
+                             sm:p-[13px_30px] xsm:p-[13px_30px]
+                            "
+                  >
+                    NFT MARKET
+                  </Link>
+                </li>
+                <li className="flex-auto ">
+                  <Link
+                    className=" block bg-[#1f2935] bg-[linear-gradient(0deg,#10181f_0%,_transparent_0%,#141a20_100%)] uppercase text-[16px] font-bold text-[#adb0bc] text-center tracking-[1px] px-[30px] py-[25px] hover:text-[#45f882] font-Barlow
+                             sm:p-[13px_30px] xsm:p-[13px_30px]
+                            "
+                  >
+                    SUPPORT
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

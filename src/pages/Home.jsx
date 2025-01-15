@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
 import Members from "../components/Members";
 import NtfItem from "../components/NftItem";
+import Navbar from "../components/Navbar";
 const items = [
   {
     id: 1,
@@ -30,6 +31,7 @@ const items = [
 function Home() {
   return (
     <>
+      <Navbar />
       <Banner />
       <div className="container bg-black w-full max-w-[1800px] mx-auto  ">
         <div className=" flex flex-col items-center lg:flex-row flex-wrap gap-x-4 justify-center py-20  px-10 ">

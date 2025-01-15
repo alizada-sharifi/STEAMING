@@ -8,6 +8,7 @@ export default {
         orange: "#ffbe18",
       },
       screens: {
+        xsm:"300px",
         sm: "460px",
         xl: "1200px",
         //   md: "992px",

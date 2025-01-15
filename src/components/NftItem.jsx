@@ -5,7 +5,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 function NtfItem({ photo, title, price }) {
   return (
     <>
-      <div className=" flex  justify-between w-4/6  lg:w-[48%] xl:w-[32%] flex-col gap-y-4 items-center sm:flex-row md:items-end bg-[#121a23] bg-[linear-gradient(0deg,#0c0e12_0%,rgba(31,41,53,0.36078)_100%)] border transition-all duration-[0.3s] ease-[ease-out] delay-[0s] mt-0 mb-[30px] mx-0 p-[25px] rounded-lg border-solid border-[rgba(76,76,76,0.2)] hover:border-[rgba(69,248,130,0.2)]    ">
+      <div className=" flex w-full  justify-between  lg:w-[48%] xl:w-[32%] flex-col gap-y-4 items-center sm:flex-row md:items-end bg-[#121a23] bg-[linear-gradient(0deg,#0c0e12_0%,rgba(31,41,53,0.36078)_100%)] border transition-all duration-[0.3s] ease-[ease-out] delay-[0s] mt-0 mb-[30px] mx-0 p-[25px] rounded-lg border-solid border-[rgba(76,76,76,0.2)] hover:border-[rgba(69,248,130,0.2)]    ">
         <div
           className=" flex-[0_0_auto]  max-w-[187px] lg:max-w-[170px] mr-5 xl:max-w-[170px] md:max-w-[187px] sm:m-[0_20px_0_0] xsm:m-[0_auto_25px]
               "

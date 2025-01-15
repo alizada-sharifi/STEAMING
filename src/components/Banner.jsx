@@ -1,15 +1,13 @@
 import "./Banner.css";
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
+
 import hero from "../assets/img/img04.png";
 
 function Banner() {
   return (
     <>
       <div className="bgImg bg-cover mx-0 px-0">
-        <Navbar />
-        <div className="container max-w-[1400px] mt-10 md:mt-0 px-3  mx-auto">
-          <section className="banner flex flex-col gap-y-12 gap-x-7 justify-center md:flex-row md:justify-between items-center text-white ">
+        <div className="container max-w-[1400px] pt-[100px]  px-3  mx-auto">
+          <section className="banner flex items-center flex-col gap-y-12 gap-x-7 justify-center md:flex-row md:justify-between text-white ">
             <div className="flex flex-col justify-center items-center md:block ">
               <section className="live w-[250px] md:w-[300px] h-[60px] rounded-xl flex  relative    ">
                 <p className="h-full text-[20px] tracking-[3px] font-bold absolute uppercase text-green text ">

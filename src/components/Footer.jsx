@@ -1,5 +1,27 @@
 import logo from "../assets/img/logo.png";
 import { IoSend } from "react-icons/io5";
+import img1 from "../assets/img/social_icon01.png";
+import img2 from "../assets/img/social_icon02.png";
+import img3 from "../assets/img/social_icon03.png";
+import img4 from "../assets/img/social_icon04.png";
+const images = [
+  {
+    id: 1,
+    img: img1,
+  },
+  {
+    id: 2,
+    img: img2,
+  },
+  {
+    id: 3,
+    img: img3,
+  },
+  {
+    id: 4,
+    img: img4,
+  },
+];
 function Footer() {
   return (
     <div className="cotainer flex bg-[#0f161b] py-5 px-10 mx-auto">
@@ -17,6 +39,11 @@ function Footer() {
               <h3 className="text-white tracking-[1.5px] text-lg font-medium ">
                 ACTIVE <span className="text-green">WITH US</span>
               </h3>
+            </div>
+            <div className="icons flex gap-x-3">
+              {images.map((img) => (
+                <img src={img.img} alt="social icon" key={img.id} className="w-8" />
+              ))}
             </div>
           </div>
         </div>
