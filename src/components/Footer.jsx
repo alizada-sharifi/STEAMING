@@ -4,6 +4,8 @@ import img1 from "../assets/img/social_icon01.png";
 import img2 from "../assets/img/social_icon02.png";
 import img3 from "../assets/img/social_icon03.png";
 import img4 from "../assets/img/social_icon04.png";
+const liStyle =
+  " text-[15px] py-1 cursor-pointer inline-block text-[#adb0bc] relative hover:text-[#45f882]  after:content-[''] after:absolute after:w-full after:h-px after:origin-[right_top] after:transition-transform after:duration-[0.4s] after:ease-[cubic-bezier(0.74,0.72,0.27,0.24)] after:scale-x-0 after:scale-y-100 after:left-0 after:bottom-0 after:bg-[#45f882]  hover:after:origin-[left_top] hover:after:scale-100";
 const images = [
   {
     id: 1,
@@ -42,7 +44,12 @@ function Footer() {
             </div>
             <div className="icons flex gap-x-3">
               {images.map((img) => (
-                <img src={img.img} alt="social icon" key={img.id} className="w-8" />
+                <img
+                  src={img.img}
+                  alt="social icon"
+                  key={img.id}
+                  className="w-8"
+                />
               ))}
             </div>
           </div>
@@ -50,39 +57,39 @@ function Footer() {
         <div className=" w-full md:w-4/12 lg:w-2/12 text-white">
           <h2 className="text-3xl font-bold">QUICK LINK</h2>
           <ul className="text-[#a8a5a5]">
-            <li className="mt-3 hover:text-green cursor-pointer">Gaming</li>
-            <li className="mt-3 hover:text-green cursor-pointer">Product</li>
-            <li className="mt-3 hover:text-green cursor-pointer">All NFTs</li>
-            <li className="mt-3 hover:text-green cursor-pointer">
+            <li className={liStyle}>Gaming</li><br />
+            <li className={liStyle}>Product</li><br />
+            <li className={liStyle}>All NFTs</li><br />
+            <li className={liStyle}>
               Social Network
-            </li>
-            <li className="mt-3 hover:text-green cursor-pointer">
+            </li><br />
+            <li className={liStyle}>
               Domain Names
-            </li>
-            <li className="mt-3 hover:text-green cursor-pointer">
+            </li><br />
+            <li className={liStyle}>
               Collectibles
-            </li>
+            </li><br />
           </ul>
         </div>
         <div className=" w-full md:w-4/12 lg:w-2/12 text-white">
           <h2 className="text-3xl font-bold">SUPPORTS</h2>
           <ul className="text-[#a8a5a5]">
-            <li className="mt-3 hover:text-green cursor-pointer">
+            <li className={liStyle}>
               Setting & Privacy
-            </li>
-            <li className="mt-3 hover:text-green cursor-pointer">
+            </li><br />
+            <li className={liStyle}>
               Help & Support
-            </li>
-            <li className="mt-3 hover:text-green cursor-pointer">
+            </li><br />
+            <li className={liStyle}>
               Live Auctions
-            </li>
-            <li className="mt-3 hover:text-green cursor-pointer">
+            </li><br />
+            <li className={liStyle}>
               Item Details
-            </li>
-            <li className="mt-3 hover:text-green cursor-pointer">
+            </li><br />
+            <li className={liStyle}>
               24/7 Supports
-            </li>
-            <li className="mt-3 hover:text-green cursor-pointer">Our News</li>
+            </li><br />
+            <li className={liStyle}>Our News</li><br />
           </ul>
         </div>
         <div className=" w-full md:w-4/12 lg:w-4/12 text-white">

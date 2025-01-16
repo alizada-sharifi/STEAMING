@@ -1,10 +1,12 @@
-import AboutUs from "../components/AboutUs";
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
-import Gallery from "../components/Gallery";
-import Members from "../components/Members";
-import NtfItem from "../components/NftItem";
 import Navbar from "../components/Navbar";
+import Banner from "../components/Banner";
+import NtfItem from "../components/NftItem";
+import AboutUs from "../components/AboutUs";
+import Members from "../components/Members";
+import VideoArea from "../components/VideoArea";
+import Roadmap from "../components/Roadmap";
+import Trending from "../components/Trending";
+import Footer from "../components/Footer";
 const items = [
   {
     id: 1,
@@ -41,8 +43,10 @@ function Home() {
         </div>
       </div>
       <AboutUs />
-      <Gallery />
       <Members />
+      <VideoArea />
+      <Roadmap />
+      <Trending />
       <Footer />
     </>
   );

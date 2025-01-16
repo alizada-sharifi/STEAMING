@@ -21,7 +21,7 @@ function Banner() {
                 VIDEO GAMES ONLINE
               </p>
 
-              <button className=" font-semibold px-12 text-black py-4 rounded-lg shadow-lg transform  transition duration-300 text-[30px] relative">
+              <button className=" font-semibold px-12 text-black py-2 rounded-lg shadow-lg transform  transition duration-300 text-[30px] relative">
                 <span className="absolute inset-0  bg-green -z-10 rounded-md clip-path-custom hover:bg-white  "></span>
                 Contact Us
               </button>
