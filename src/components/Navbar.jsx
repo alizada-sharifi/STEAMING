@@ -119,7 +119,7 @@ function Navbar() {
             </li>
 
             <li className="px-[23px] hover:text-green">
-              <NavLink>CONTACT</NavLink>
+              <NavLink to="/contact">CONTACT</NavLink>
             </li>
           </ul>
         </div>

@@ -6,25 +6,25 @@ import team03 from "../assets/img/team03.png";
 import team04 from "../assets/img/team04.png";
 const membersInfo = [
   {
-    id: "1",
+    id: 1,
     img: team01,
     name: "killer master",
     jobTitle: "Blockchain Expert",
   },
   {
-    id: "2",
+    id: 2,
     img: team02,
     name: "tanu mark",
     jobTitle: "Developer",
   },
   {
-    id: "3",
+    id: 3,
     img: team03,
     name: "Thompson Scot",
     jobTitle: "Art Director",
   },
   {
-    id: " 4",
+    id: 4,
     img: team04,
     name: "Shakh Danial",
     jobTitle: "Crypto Advisor",
@@ -40,15 +40,19 @@ function Members() {
       }}
     >
       <div className="max-w-[1400px] mx-auto text-center py-5 px-5">
-        <h2 className="text-green-500 font-semibold text-green text-2xl tracking-[2px]">
+        <h2 className="  text-green-500 font-semibold text-green text-2xl tracking-[2px]">
           OUR TEAM MEMBERS
         </h2>
-        <h1 className="text-white font-bold text-4xl mt-3 sm:text-5xl ">ACTIVE TEAM MEMBERS</h1>
-        <div className="flex flex-wrap mt-14 items-center mx-[-15px] justify-center ">
-          {membersInfo.map((memeber) => (
-            <MemberItem {...memeber} key={membersInfo.id} />
-          ))}
-        </div>
+        <h1 className="text-white font-bold text-4xl mt-3 sm:text-5xl ">
+          ACTIVE TEAM MEMBERS
+          <div className="flex flex-wrap mt-14 items-center gap-x-8 mx-[-15px] justify-center">
+            {membersInfo.map((member) => (
+              <div>
+                <MemberItem {...member} key={member.id} />
+              </div>
+            ))}
+          </div>
+        </h1>
       </div>
     </div>
   );
