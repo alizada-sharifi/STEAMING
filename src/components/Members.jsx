@@ -1,5 +1,6 @@
 import bgImage from "../assets/img/area_bg01.jpg";
 import MemberItem from "./MemberItem";
+import { motion } from "framer-motion";
 import team01 from "../assets/img/team01.png";
 import team02 from "../assets/img/team02.png";
 import team03 from "../assets/img/team03.png";
@@ -45,14 +46,24 @@ function Members() {
         </h2>
         <h1 className="text-white font-bold text-4xl mt-3 sm:text-5xl ">
           ACTIVE TEAM MEMBERS
-          <div className="flex flex-wrap mt-14 items-center gap-x-8 mx-[-15px] justify-center">
-            {membersInfo.map((member) => (
-              <div>
-                <MemberItem {...member} key={member.id} />
-              </div>
-            ))}
-          </div>
         </h1>
+        <div className="flex flex-wrap mt-14 items-center gap-x-8 mx-[-15px] justify-center">
+          {membersInfo.map((member, index) => (
+            <motion.div
+              key={member.id}
+              initial={{ x: "-100%", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 25,
+                delay: index * 1,
+              }}
+            >
+              <MemberItem {...member} />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   );

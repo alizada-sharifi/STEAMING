@@ -43,7 +43,7 @@ function MobileNav() {
         <div className="offcanvas-body flex flex-col flex-1 ">
           <div className="header flex items-center justify-between py-[20px]  px-10 border-b-[#18202a] border-b">
             <div className="logo">
-              <Link>
+              <Link to="/">
                 <img src={logo} alt="logo" className="max-w-[150px]" />
               </Link>
             </div>
@@ -70,14 +70,20 @@ function MobileNav() {
             </div>
             <ul>
               <li className=" border-y border-[#202b36] py-3">
-                <span className="font-semibold text-[14px]">HOME</span>
+                <span className="font-semibold text-[14px]">
+                  <Link to="/">HOME</Link>
+                </span>
               </li>
               <li className=" border-y border-[#202b36] py-3">
-                <span className="font-semibold text-[14px]">ABOUT US</span>
+                <span className="font-semibold text-[14px]">
+                  <Link to="/about-us">ABOUT US</Link>
+                </span>
               </li>
               <div className="group relative">
                 <li className="flex justify-between items-center border-y border-[#202b36] py-3">
-                  <span className="font-semibold text-[14px]">TOURNAMENT</span>
+                  <span className="font-semibold text-[14px]">
+                    <Link to="/tournament">TOURNAMENT</Link>
+                  </span>
                   <div
                     className={
                       isSubmenuOpen

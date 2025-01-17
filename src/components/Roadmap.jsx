@@ -17,8 +17,8 @@ function Roadmap() {
       className="bg-center bg-cover py-24"
     >
       <div className="contaienr  px-5 ">
-        <div className="flex flex-col lg:flex-row gap-x-3 w-full">
-          <div className="left w-full lg:w-5/12 xl:w-1/2">
+        <div className="flex flex-col lg:flex-row justify-around lg:px-32 gap-x-14 w-full">
+          <div className="left w-full lg:w-5/12 ">
             <h1 className="uppercase text-white text-6xl font-extrabold tracking[3px] mb-5">
               a look into roadmaps seasons
             </h1>
@@ -35,7 +35,7 @@ function Roadmap() {
             </Link>
             <img src={roadmap} alt="" />
           </div>
-          <div className="right w-full lg:w-7/12 xl:w-1/2">
+          <div className="right w-full lg:w-7/12">
             <div className=" relative ml-[60px] before:content-[''] before:absolute before:w-1.5 before:h-full before:rounded-[5px] before:left-0 before:top-0 before:bg-gradient-to-t before:from-[#10161c] before:to-[#45f882]  lg:ml-0 sm:ml-0 xsm:ml-0">
               <div className={itemStyle}>
                 <h3 className="title text-[30px] text-white uppercase tracking-wide font-extrabold leading-none mt-0 mb-[22px] mx-0 lg:text-[26px] sm:text-2xl xsm:text-2xl">

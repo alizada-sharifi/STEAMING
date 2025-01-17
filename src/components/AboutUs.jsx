@@ -1,7 +1,6 @@
 import aboutBg from "../assets/img/area_bg01.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import RateItem from "./RateItem";
 const avatars = [
   {
     id: "1",
@@ -54,10 +53,6 @@ const avatars = [
 ];
 function AboutUs() {
   const [selectedAvatar, setSelectedAvater] = useState(avatars[0]);
-  const handleAvatar = () => {
-    setSelectedAvater(avatar);
-    console.log(avatar);
-  };
   return (
     <>
       <div
