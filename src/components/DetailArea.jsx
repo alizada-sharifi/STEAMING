@@ -46,8 +46,8 @@ function DetailArea() {
               dolor in repderit in voluptate velit esse cillum dolorliq commodo
               consequat.
             </p>
-            <div className="quote my-6 flex gap-x-1">
-              <LuQuote size="40px" color="#45f882" />
+            <div className="quote my-6 flex">
+              <LuQuote className="text-green text-2xl" />
               <p className=" md:text-2xl text-white leading-normal  italic font-medium  xsm:text-lg">
                 Duis elentum solliciin is yaugue euismods Nulla ullaorper. Ipsum
                 is simply dummy text of printing and typeetting industry.
@@ -100,7 +100,7 @@ function DetailArea() {
               />
             </form>
           </div>
-          <div className="footer flex justify-between items-center mt-5 text-[#adb0bc]">
+          <div className="footer flex flex-col sm:flex-row  justify-between items-center mt-5 text-[#adb0bc]">
             <div className="tags flex gap-x-3">
               <span className="text-white font-bold">TAGS:</span>
               <Link className="hover:text-green text-sm">ESPORTS,</Link>
@@ -121,7 +121,7 @@ function DetailArea() {
             </div>
           </div>
         </div>
-        <div className="w-8/12 lg:w-4/12 text-white">
+        <div className="w-10/12 lg:w-4/12 text-white">
           <div className="search border-[#232a30] border mb-10 rounded-[5px]">
             <div className="flex items-center ">
               <MdArrowRight size="30px" color="#45f882" />

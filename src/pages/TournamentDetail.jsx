@@ -27,7 +27,7 @@ function TournamentDetail() {
         </div>
       </div>
       <DetailArea />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
