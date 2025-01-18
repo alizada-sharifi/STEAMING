@@ -53,8 +53,11 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="active text-left block ml-0 group/second">
-                  <Link className="font-Barlow text-[15px] leading-[1.4] font-bold text-[#fff] uppercase tracking-[0.8px] relative flex pl-[25px] pr-[15px] py-[9px] before:content-[''] before:block before:h-[7px] before:bg-[#45f882] before:transition-[width] before:duration-[0.2s] before:ease-linear before:ml-0 before:mr-[9px] before:mt-[7px] before:mb-0 before:rounded-[0_5px_0_0] before:w-0 group-hover/second:before:w-[7px]">
-                    TOURNAMENT Single
+                  <Link
+                    to="/tournament-details"
+                    className="font-Barlow text-[15px] leading-[1.4] font-bold text-[#fff] uppercase tracking-[0.8px] relative flex pl-[25px] pr-[15px] py-[9px] before:content-[''] before:block before:h-[7px] before:bg-[#45f882] before:transition-[width] before:duration-[0.2s] before:ease-linear before:ml-0 before:mr-[9px] before:mt-[7px] before:mb-0 before:rounded-[0_5px_0_0] before:w-0 group-hover/second:before:w-[7px]"
+                  >
+                    TOURNAMENT DETAILS
                   </Link>
                 </li>
               </ul>
@@ -68,7 +71,10 @@ function Navbar() {
  "
               >
                 <li className=" text-left block ml-0 group/second">
-                  <Link className="font-Barlow text-[15px] leading-[1.4] font-bold text-[#fff] uppercase tracking-[0.8px] relative flex pl-[25px] pr-[15px] py-[9px] before:content-[''] before:block before:h-[7px] before:bg-[#45f882] before:transition-[width] before:duration-[0.2s] before:ease-linear before:ml-0 before:mr-[9px] before:mt-[7px] before:mb-0 before:rounded-[0_5px_0_0] before:w-0 group-hover/second:before:w-[7px]">
+                  <Link
+                    to="/shop"
+                    className="font-Barlow text-[15px] leading-[1.4] font-bold text-[#fff] uppercase tracking-[0.8px] relative flex pl-[25px] pr-[15px] py-[9px] before:content-[''] before:block before:h-[7px] before:bg-[#45f882] before:transition-[width] before:duration-[0.2s] before:ease-linear before:ml-0 before:mr-[9px] before:mt-[7px] before:mb-0 before:rounded-[0_5px_0_0] before:w-0 group-hover/second:before:w-[7px]"
+                  >
                     GAMING SHOP
                   </Link>
                 </li>

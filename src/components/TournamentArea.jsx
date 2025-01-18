@@ -2,6 +2,9 @@ import TournamentItem from "./TournamentItem";
 import bgImage from "../assets/img/tournament_bg.jpg";
 import { Link } from "react-router-dom";
 import ActiveTournamentItem from "./ActiveTournamentItem";
+import img1 from "../assets/img/i-1.png";
+import img2 from "../assets/img/i-2.png";
+import img3 from "../assets/img/i-3.png";
 const items = [
   {
     id: 1,
@@ -25,6 +28,29 @@ const items = [
     color: "green",
   },
 ];
+export const ActiveItems = [
+  {
+    id: 1,
+    photo: img1,
+    title: "FoxTie Max",
+    prize: 75000,
+    time: "10H : 15M",
+  },
+  {
+    id: 2,
+    photo: img2,
+    title: "Hatlax TM.",
+    prize: "85000",
+    time: "12H : 10M",
+  },
+  {
+    id: 3,
+    photo: img3,
+    title: "Spartan iv",
+    prize: 45000,
+    time: "10H : 15M",
+  },
+];
 function TournamentArea() {
   return (
     <>
@@ -45,6 +71,7 @@ function TournamentArea() {
           </div>
         </div>
       </div>
+      {/* ========== active area ================= */}
       <div
         className="py-20"
         style={{
@@ -54,9 +81,9 @@ function TournamentArea() {
         }}
       >
         <div className="container max-w-[1400px] mx-auto px-5 md:px-10 lg:px-28 ">
-          <div className="heading uppercase flex justify-between items-center ">
-            <div>
-              <h2 className=" font-semibold text-green text-xl tracking-[1px]">
+          <div className="heading uppercase flex-col lg:flex-row gap-4 flex justify-between items-center ">
+            <div className="text-center lg:text-left">
+              <h2 className=" font-semibold text-green text-lg md:text-xl tracking-[1px]">
                 tournament list
               </h2>
               <h1 className=" text-[45px] text-white popin font-extrabold tracking-[1px] m-0 sm:text-[35px] xsm:text-[35px]">
@@ -71,7 +98,11 @@ function TournamentArea() {
               </Link>
             </div>
           </div>
-          <ActiveTournamentItem />
+          <div className="flex flex-wrap xl:flex-nowrap w-full gap-8  mt-10 justify-center  2xl:px-28  ">
+            {ActiveItems.map((item) => (
+              <ActiveTournamentItem key={item.id} {...item} />
+            ))}
+          </div>
         </div>
       </div>
     </>

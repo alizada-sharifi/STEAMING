@@ -82,7 +82,7 @@ function MobileNav() {
               <div className="group relative">
                 <li className="flex justify-between items-center border-y border-[#202b36] py-3">
                   <span className="font-semibold text-[14px]">
-                    <Link to="/tournament">TOURNAMENT</Link>
+                    <Link>TOURNAMENT</Link>
                   </span>
                   <div
                     className={
@@ -102,9 +102,11 @@ function MobileNav() {
                       : "opacity-0 -translate-y-10 pointer-events-none absolute"
                   }`}
                 >
-                  <li className="border-y border-[#202b36] py-3">TOURNAMENT</li>
                   <li className="border-y border-[#202b36] py-3">
-                    TOURNAMENT SINGLE
+                    <Link to="/tournament">TOURNAMENT</Link>
+                  </li>
+                  <li className="border-y border-[#202b36] py-3">
+                    <Link to="/tournament-details">TOURNAMENT DETAILS</Link>
                   </li>
                 </ul>
               </div>
@@ -130,7 +132,7 @@ function MobileNav() {
                   }`}
                 >
                   <li className="border-y border-[#202b36] py-3">
-                    GAMING SHOP
+                    <Link to="/shop">GAMING SHOP</Link>
                   </li>
                   <li className="border-y border-[#202b36] py-3">
                     SHOP DETAILS
