@@ -10,8 +10,9 @@ import { LuQuote } from "react-icons/lu";
 // ================ styles
 const inputStyle =
   " block w-full border rounded mt-0 mb-3 mx-0 px-[30px] py-[15px] border-solid border-[#23292f] bg-[#0f161b] placeholder:opacity-60  focus:!border-[#23292f] outline-none";
-const h4Style = "text-[18px] font-semibold  leading-none m-0  py-[19px] ";
-const divStyle =
+export const h4Style =
+  "text-[18px] font-semibold uppercase leading-none m-0  py-[19px] ";
+export const divStyle =
   "border-[#232a30] bg-[#182029] border -m-px p-5 rounded-[0_0_5px_5px] border-solid";
 import heroImg from "../assets/img/gallery04.jpg";
 function DetailArea() {
@@ -128,10 +129,10 @@ function DetailArea() {
               <h4 className={h4Style}>SEARCH</h4>
             </div>
             <div className={divStyle}>
-              <div className=" flex items-center leading-none">
+              <div className=" flex items-center justify-between leading-none">
                 <input
                   type="text"
-                  className=" block grow font-medium pl-0 pr-5 py-0 border-0  bg-transparent placeholder:opacity-[0.63] text-lg placeholder:font-medium outline-none text-[#adb0bc]"
+                  className=" block w-[95%] font-medium  border-0  bg-transparent placeholder:opacity-[0.63] text-lg placeholder:font-medium outline-none text-[#adb0bc]"
                   placeholder="Search here"
                 />
                 <button className=" text-[#adb0bc] text-lg  hover:text-[#45f882]">
