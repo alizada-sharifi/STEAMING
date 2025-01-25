@@ -1,8 +1,27 @@
-# React + Vite
+# Steaming Eight
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🚀 Live Demo
+[Steaming Eight](https://steaming-eight.vercel.app/)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Overview
+**Steaming Eight** is a responsive and interactive gaming website built using **React**. This project was designed to create a dynamic user experience with visually engaging animations and seamless navigation. 
+
+---
+
+## 🎯 Features
+
+- **Built with React**: Ensures a fast and dynamic user interface.
+- **Responsive Design**: Styled with **Tailwind CSS** for a modern and clean aesthetic.
+- **Interactive Sliders**: Powered by **Swiper** for smooth transitions and engaging user interactions.
+- **Dynamic Animations**: Implemented using **Framer Motion** for enhanced visual effects.
+
+---
+
+## 🛠️ Technologies Used
+
+- **React**
+- **Tailwind CSS**
+- **Swiper.js** (for sliders)
+- **Framer Motion** (for animations)
