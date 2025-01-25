@@ -5,6 +5,7 @@ import About from "./pages/AboutUs";
 import Tournament from "./pages/Tournament";
 import TournamentDetail from "./pages/TournamentDetail";
 import Shop from "./pages/Shop";
+import ShopDetail from "./pages/ShopDetail";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/tournament" element={<Tournament />} />
         <Route path="/tournament-details" element={<TournamentDetail />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/shop-detail" element={<ShopDetail />} />
       </Routes>
     </BrowserRouter>
   );

@@ -135,7 +135,7 @@ function MobileNav() {
                     <Link to="/shop">GAMING SHOP</Link>
                   </li>
                   <li className="border-y border-[#202b36] py-3">
-                    SHOP DETAILS
+                    <Link to="/shop-detail">SHOP DETAILS</Link>
                   </li>
                   <li className="border-y border-[#202b36] py-3">
                     OUR SERVICES

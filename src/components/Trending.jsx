@@ -72,7 +72,7 @@ function Trending() {
   return (
     <div className="bg-[#10181f] py-12">
       <div className="container max-w-[1400px] mx-auto px-5">
-        <div className="header flex justify-between">
+        <div className="header flex flex-col items-center gap-3 md:flex-row justify-between">
           <div className="title flex gap-x-4">
             <h2 className="text-white text-4xl font-bold tracking-[1px]">
               TOP TRENDING
